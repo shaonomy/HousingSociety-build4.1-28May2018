@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@drawable/background"
+        android:screenOrientation="portrait"
+        android:layout_marginTop="?attr/actionBarSize"
+        tools:context=".LandingPage"
+        tools:showIn="@layout/app_bar_landing_page">
+
+        <GridLayout
+            android:id="@+id/mainGrid"
+            android:layout_weight="8"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:padding="14dp"
+            android:columnCount="2"
+            android:rowCount="3">
+
+            <!--Column 1-->
+            <FrameLayout
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:background="@drawable/rounded_frame"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <LinearLayout
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/landingpage_aboutus"
+                        android:onClick="performAction"
+                        android:src="@drawable/aboutus"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="64dp"
+                        tools:ignore="OnClick" />
+                    <TextView
+                        android:text="About Us"
+                        android:editable="false"
+                        android:layout_gravity="center"
+                        android:clickable="false"
+                        android:textColor="@android:color/black"
+                        android:autoSizeMaxTextSize="@dimen/activity_horizontal_margin"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <!--Column 2-->
+            <FrameLayout
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:background="@drawable/rounded_frame"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <LinearLayout
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/landingpage_auditdetails"
+                        android:onClick="performAction"
+                        android:src="@drawable/audit1"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="64dp"
+                        tools:ignore="OnClick" />
+                    <TextView
+                        android:text="Audit Details"
+                        android:editable="false"
+                        android:layout_gravity="center"
+                        android:clickable="false"
+                        android:textColor="@android:color/black"
+                        android:autoSizeMaxTextSize="@dimen/activity_horizontal_margin"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <!--Column 3-->
+            <FrameLayout
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:background="@drawable/rounded_frame"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <LinearLayout
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/landingpage_paymentdeatils"
+                        android:onClick="performAction"
+                        android:src="@drawable/payment1"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="64dp"
+                        tools:ignore="OnClick" />
+                    <TextView
+                        android:text="Payment Details"
+                        android:editable="false"
+                        android:layout_gravity="center"
+                        android:clickable="false"
+                        android:textColor="@android:color/black"
+                        android:autoSizeMaxTextSize="@dimen/activity_horizontal_margin"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <!--Column 4-->
+            <FrameLayout
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:background="@drawable/rounded_frame"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <LinearLayout
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/landingpage_events"
+                        android:onClick="performAction"
+                        android:src="@drawable/event"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="64dp"
+                        tools:ignore="OnClick" />
+                    <TextView
+                        android:text="Events"
+                        android:editable="false"
+                        android:layout_gravity="center"
+                        android:clickable="false"
+                        android:textColor="@android:color/black"
+                        android:autoSizeMaxTextSize="@dimen/activity_horizontal_margin"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <!--Column 5-->
+            <FrameLayout
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:background="@drawable/rounded_frame"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <LinearLayout
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/landingpage_features"
+                        android:onClick="performAction"
+                        android:src="@drawable/features"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="64dp"
+                        tools:ignore="OnClick" />
+                    <TextView
+                        android:text="Features"
+                        android:editable="false"
+                        android:layout_gravity="center"
+                        android:clickable="false"
+                        android:textColor="@android:color/black"
+                        android:autoSizeMaxTextSize="@dimen/activity_horizontal_margin"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <!--Column 6-->
+            <FrameLayout
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:background="@drawable/rounded_frame"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <LinearLayout
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/landingpage_memberdetails"
+                        android:onClick="performAction"
+                        android:src="@drawable/memberdetail1"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="64dp"
+                        tools:ignore="OnClick" />
+                    <TextView
+                        android:text="Member Details"
+                        android:editable="false"
+                        android:layout_gravity="center"
+                        android:clickable="false"
+                        android:textColor="@android:color/black"
+                        android:autoSizeMaxTextSize="@dimen/activity_horizontal_margin"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </FrameLayout>
+        </GridLayout>
+    </RelativeLayout>
