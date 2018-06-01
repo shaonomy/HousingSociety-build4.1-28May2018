@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".About_us"
+    android:background="@color/darkgray"
+    android:layout_marginTop="?attr/actionBarSize"
+    tools:showIn="@layout/app_bar_about_us">
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/v_flipper"/>
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+        android:layout_below="@+id/v_flipper"
+        android:text="About US" />
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Registration No. "
+        android:layout_below="@id/txt1"/>
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text=""
+        android:layout_below="@id/txt2"/>
+    <TextView
+        android:id="@+id/txt4"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="hello12"
+        android:layout_below="@id/txt3"/>
+    <TextView
+        android:id="@+id/txt5"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="adress"
+        android:layout_below="@id/txt4"/>
+
+    <TextView
+        android:id="@+id/txt6"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="adress"
+        android:layout_below="@id/txt5"/>
+
+
+
+    <RelativeLayout
+        android:layout_below="@+id/txt6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <TextView
+        android:id="@+id/txt7"
+        android:layout_width="250dp"
+        android:layout_height="130dp"
+        android:textColor="@color/white"
+        android:text=" Address:
+
+6th Floor, Shrimati Minatai Thakare Nagar,Karve Nagar,Near Citypride, Kothrud, Pune-411052"
+        android:background="@color/gray"
+        />
+
+<TextView
+        android:id="@+id/txt8"
+        android:layout_width="200dp"
+        android:layout_height="130dp"
+        android:textColor="@color/white"
+        android:text="Contact:
+
+shaonomy@gmail.com
++918654268597"
+        android:background="@color/gray"
+        android:layout_toRightOf="@id/txt7"
+        />
+
+    </RelativeLayout>
+</RelativeLayout>
+</ScrollView>
