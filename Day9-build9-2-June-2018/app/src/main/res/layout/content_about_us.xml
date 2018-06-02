@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="2">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".About_us"
+    android:background="@color/darkgray"
+    android:layout_marginTop="?attr/actionBarSize"
+    tools:showIn="@layout/app_bar_about_us">
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/v_flipper"/>
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+        android:layout_below="@+id/v_flipper"
+        android:text="About US" />
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Registration No. "
+        android:layout_below="@id/txt1"/>
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text=""
+        android:layout_below="@id/txt2"/>
+    <TextView
+        android:id="@+id/txt4"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="hello12"
+        android:layout_below="@id/txt3"/>
+    <TextView
+        android:id="@+id/txt5"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="adress"
+        android:layout_below="@id/txt4"/>
+
+    <TextView
+        android:id="@+id/txt6"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="adress"
+        android:layout_below="@id/txt5"/>
+</RelativeLayout>
+</ScrollView>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/address"
+        android:layout_below="@+id/txt6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/txt7"
+        android:layout_width="250dp"
+        android:layout_height="130dp"
+        android:textColor="@color/white"
+        android:text=" Address:
+
+6th Floor, Shrimati Minatai Thakare Nagar,Karve Nagar,Near Citypride, Kothrud, Pune-411052"
+        android:background="@color/gray"
+        />
+
+<TextView
+        android:id="@+id/txt8"
+        android:layout_width="200dp"
+        android:layout_height="130dp"
+        android:textColor="@color/white"
+        android:text="Contact:
+
+shaonomy@gmail.com
++918654268597"
+        android:background="@color/gray"
+        android:layout_toRightOf="@id/txt7"
+        />
+
+        <RelativeLayout
+            android:layout_below="@+id/txt7"
+            android:id="@+id/symbols"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:background="@color/gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <GridLayout
+                android:id="@+id/mainGrid"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+
+                android:layout_centerInParent="true"
+                android:layout_weight="3"
+                android:columnCount="3"
+                android:padding="14dp"
+                android:rowCount="1"
+                android:rowOrderPreserved="false">
+
+                <!--Column 1-->
+                <FrameLayout
+                    android:id="@+id/pdfFrame"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/rounded_frame">
+
+                    <ImageView
+                        android:id="@+id/pdf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:onClick="performDownloadAction"
+                        android:src="@drawable/pdficon"
+                        android:background="@drawable/rounded_frame"/>
+
+                </FrameLayout>
+
+                <!--Column 2-->
+                <FrameLayout
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:background="@drawable/rounded_frame">
+
+                    <ImageView
+                        android:id="@+id/word"
+                        android:layout_width="55dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:onClick="performDownloadAction"
+                        android:src="@drawable/wordicon"
+                        android:background="@drawable/rounded_frame"/>
+
+                </FrameLayout>
+
+                <!--Column 1-->
+                <FrameLayout
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_toRightOf="@+id/word"
+                    android:background="@drawable/rounded_frame">
+
+                    <ImageView
+                        android:id="@+id/excel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:onClick="performDownloadAction"
+                        android:src="@drawable/exelicon"
+                        />
+
+                </FrameLayout>
+            </GridLayout>
+        </RelativeLayout>
+        <RelativeLayout
+
+            android:layout_below="@id/txt8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray"
+            >
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
