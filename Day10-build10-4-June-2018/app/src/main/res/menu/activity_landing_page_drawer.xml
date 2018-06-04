@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav1_aboutus"
+            android:icon="@mipmap/aboutus"
+            android:title="About Us" />
+
+        <item
+            android:id="@+id/nav1_auditdetails"
+            android:icon="@mipmap/audit1"
+            android:title="Audit Details" />
+
+        <item
+            android:id="@+id/nav1_paymentdetails"
+            android:icon="@mipmap/payment1"
+            android:title="Payment Details" />
+
+        <item
+            android:id="@+id/nav1_events"
+            android:icon="@mipmap/event"
+            android:title="Events" />
+
+        <item
+            android:id="@+id/nav1_features"
+            android:icon="@mipmap/features"
+            android:title="Features" />
+
+
+        <item
+            android:id="@+id/nav1_memberdetails"
+            android:icon="@mipmap/memberdetail1"
+            android:title="Member Details" />
+
+
+    </group>
+
+</menu>
