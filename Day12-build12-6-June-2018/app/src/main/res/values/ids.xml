@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="drawer_layout_aboutus" type="id" />
+    <item name="nav_auditdetails_memberdetails" type="id" />
+    <item name="toolbarPayment" type="id" />
+</resources>
