@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Audit_Details"
+    tools:showIn="@layout/app_bar_audit__details"
+    android:orientation="vertical">
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/v_flipper"/>
+
+
+
+    <ScrollView
+        android:layout_below="@+id/v_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/symbols"
+        >
+        <RelativeLayout
+            android:background="@color/grey_300"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimary"
+                android:text="Shaonomy Housing Society"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_below="@+id/txt1"
+                android:id="@+id/txt1.1"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="A Luxurious Residential Complex comprising of 2, 3, 4 BHK apartments by Mahajan Builders at Mira Road Thane. The landscape is beautiful with spacious 26 Blocks and over 1500 Houses. This is the only project that offers 7 years warranty. The project is the unique of its kind having 101 amenities. Some of the distinct amenities are - 7 Years Warranty Artificial Lake with Boating, Solar Heating Units, Keyless Entry (3 in 1 Locks), Modular Kitchen, Cabinet with every Flat, Monumental front gate, Car Washing Areas, C.C.T.V. integrated with cable T.V. etc."
+                />
+
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_below="@+id/txt1.1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimary"
+                android:text="registration No"/>
+
+            <TextView
+                android:layout_below="@+id/txt2"
+                android:id="@+id/txt2.1"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="987654321"
+                />
+
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_below="@id/txt2.1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:text="About Housing society"/>
+
+            <TextView
+                android:layout_below="@+id/txt3"
+                android:id="@+id/txt3.1"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="A Luxurious Residential Complex comprising of 2, 3, 4 BHK apartments by Mahajan Builders at Mira Road Thane. The landscape is beautiful with spacious 26 Blocks and over 1500 Houses. This is the only project that offers 7 years warranty. The project is the unique of its kind having 101 amenities. Some of the distinct amenities are - 7 Years Warranty Artificial Lake with Boating, Solar Heating Units, Keyless Entry (3 in 1 Locks), Modular Kitchen, Cabinet with every Flat, Monumental front gate, Car Washing Areas, C.C.T.V. integrated with cable T.V. etc."
+                />
+
+
+            <TextView
+                android:id="@+id/txt4"
+                android:layout_below="@+id/txt3.1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:text="Commity Memeber"/>
+
+            <TextView
+                android:id="@+id/m1"
+                android:layout_below="@+id/txt4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <TextView
+                android:layout_below="@+id/m1"
+                android:id="@+id/result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+
+
+            <!--<Button-->
+            <!--android:id="@+id/member"-->
+            <!--android:layout_below="@+id/m1"-->
+            <!--android:layout_marginBottom="20dp"-->
+            <!--android:paddingRight="10dp"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:text="Button"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--/>-->
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:id="@+id/symbols"
+        android:background="@color/gray"
+        android:layout_above="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <GridLayout
+            android:id="@+id/mainGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:rowCount="1"
+            android:columnCount="4"
+            android:columnOrderPreserved="false"
+            android:padding="14dp"
+            android:layout_centerInParent="true">
+
+            <!--Column 1-->
+            <FrameLayout
+                android:id="@+id/pdfFrame"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/rounded_frame">
+
+                <ImageView
+                    android:id="@+id/pdf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/pdficon"
+                    android:onClick="performDownloadAction"
+                    tools:ignore="OnClick" />
+
+            </FrameLayout>
+
+            <!--Column 2-->
+            <FrameLayout
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/rounded_frame"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_toRightOf="@+id/pdf">
+
+                <ImageView
+                    android:id="@+id/word"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/wordicon"
+                    android:onClick="performDownloadAction"
+                    tools:ignore="OnClick" />
+
+            </FrameLayout>
+
+            <!--Column 1-->
+            <FrameLayout
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@+id/word"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/rounded_frame">
+
+                <ImageView
+                    android:id="@+id/excel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:onClick="performDownloadAction"
+                    android:src="@drawable/exelicon"
+                    tools:ignore="OnClick" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@+id/excel"
+                android:background="@drawable/rounded_frame">
+
+                <ImageView
+                    android:id="@+id/gallery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:onClick="performDownloadAction"
+                    android:src="@drawable/gallery"
+                    tools:ignore="OnClick" />
+
+
+
+            </FrameLayout>
+        </GridLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/add"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/adress"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:textColor="@color/white"
+            android:text=" Address:
+6th Floor, Shrimati Minatai Thakare Nagar,Karve Nagar,Near Citypride, Kothrud, Pune-411052"
+            android:background="@color/gray"
+            />
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/white"
+            android:text="Contact:shaonomy@gmail.com+918654268597"
+            android:background="@color/gray"
+            android:layout_toRightOf="@id/adress"
+            />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
